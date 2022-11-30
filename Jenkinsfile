@@ -27,7 +27,7 @@ pipeline {
         stage("docker build "){
             steps{
                 sh 'docker build -t anjireddy3993/cicd:5.0  . '
-                }
+            }
         }
         stage("docker login"){
             steps{
