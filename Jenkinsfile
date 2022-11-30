@@ -20,7 +20,9 @@ pipeline {
         }
         stage("nexus artifacts  "){
 
-            steps
+            steps{
+                echo "  this  THIS  IS  TEST - SECTION "
+            }
         }
         stage("docker build "){
             steps{
