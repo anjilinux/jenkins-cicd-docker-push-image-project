@@ -12,8 +12,8 @@ pipeline {
         }
         stage("maven clean package") {
             steps{
-                bat "mvn clean package"
-                bat "mvn sonar:sonar"
+                bat 'mvn clean package'
+                bat 'mvn sonar:sonar'
                 //bat "mv target/*.war target/myweb.war"
                 
             }
@@ -37,7 +37,7 @@ pipeline {
          
         stage(" docker pubat"){
             steps{
-                bat 'docker pubat  anjireddy3993/cicd:5.0'
+                bat 'docker push  anjireddy3993/cicd:5.0'
             }
 
         }
