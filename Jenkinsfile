@@ -18,12 +18,12 @@ pipeline {
                 
             }
         }
-        stage("nexus artifacts  "){
+        // stage("nexus artifacts  "){
 
-            steps{
-                echo "  this  THIS  IS  TEST - SECTION "
-            }
-        }
+        //     steps{
+        //         echo "  this  THIS  IS  TEST - SECTION "
+        //     }
+        // }
         stage("docker build "){
             steps{
                 sh 'docker build -t anjireddy3993/cicd:5.0  . '
