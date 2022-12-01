@@ -13,7 +13,7 @@ pipeline {
         stage("maven clean package") {
             steps{
                 bat 'mvn clean package'
-                bat 'mvn sonar:sonar'
+               
                 //bat "mv target/*.war target/myweb.war"
                 
             }
