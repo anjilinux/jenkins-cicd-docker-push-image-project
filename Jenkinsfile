@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage("git checkout"){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rritsoft/war.com.hp-anji.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rritsoft/jenkins-cicd-docker-push-image-project.git']]])
                 
             }
         }
